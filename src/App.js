@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { FaAngleDoubleRight } from 'react-icons/fa'
 import data from './data'
 
 function App() {
   const [jobs] = useState(data);
   const [value, setValue] = useState(0);
-  
+
   const {company, dates, duties, title} = jobs[value];
 
   return <section className="section">
